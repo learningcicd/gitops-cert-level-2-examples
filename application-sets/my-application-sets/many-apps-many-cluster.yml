@@ -13,14 +13,13 @@ spec:
               revision: HEAD
               directories:
                 - path: application-sets/example-apps/*
-          # cluster generator, 'child' #2
-          - clusters: 
+      
               
   template:
     metadata:
       name: '{{path.basename}}-{{name}}'
     spec:
-      project: '{{metadata.labels.environment}}'
+      project: 'default'
       source:
         repoURL: application-sets/example-apps/*
         targetRevision: HEAD
