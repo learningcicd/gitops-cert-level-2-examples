@@ -21,7 +21,7 @@ spec:
     spec:
       project: 'default'
       source:
-        repoURL: application-sets/example-apps/*
+        repoURL: https://github.com/codefresh-contrib/gitops-cert-level-2-examples.git
         targetRevision: HEAD
         path: '{{path}}'
       destination:
